@@ -1,0 +1,6 @@
+#tar文件解压
+import os
+import tarfile
+
+if not os.path.exists("/home/fyx/a"):
+  tarfile.open("a.tar.gz",'r:gz').extractall("/home/fyx/")
