@@ -4,7 +4,11 @@ import math
 
 Xp1=[]
 Yp1=[]
-file= "1.txt"
+tag = False
+file= "1.txt" if tag else "2.txt"
+fun = lambda x:abs(x-1)
+
+print(sorted([1,3,5,-1],key=fun))
 
 with open(file, 'r') as f:
   for line in f.readlines():
